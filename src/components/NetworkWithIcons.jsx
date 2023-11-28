@@ -98,7 +98,7 @@ function NetworkWithIcons() {
     console.log("Datatosend to backend on /forward - ", dataToSend);
 
     await axios
-      .post("http://127.0.0.1:5000/forward", dataToSend)
+      .post("https://bridge-algo-backend.onrender.com/forward", dataToSend)
       .then((response) => {
         console.log("response from /forward - ", response);
         setAnimationObject(response.data.forwardTable);
@@ -385,7 +385,7 @@ function NetworkWithIcons() {
       setCurrentDoneReset("Reset");
       setDisabledAddEdgeButton(true);
       await axios
-        .post("http://127.0.0.1:5000/mst", data)
+        .post("https://bridge-algo-backend.onrender.com/mst", data)
         .then((response) => {
           console.log("Response from MST - ", response);
           setBridgeTablesToSendToBackend(response.data.bridgeTables);
