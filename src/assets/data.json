@@ -1,0 +1,68 @@
+{
+    "nodes": [
+      {
+        "id": "Laptop",
+        "label": "Laptop",
+        "name": "Laptop",
+        "shape": "image",
+        "image": "https://i.ibb.co/Y3LT7fJ/laptop.jpg",
+        "size": 15,
+        "color": "#0000ff"
+      },
+      {
+        "id": "PC",
+        "label": "PC",
+        "name": "PC",
+        "shape": "PC",
+        "image": "https://i.ibb.co/g7njG4N/pc.jpg",
+        "size": 15,
+        "color": "#ffffff"
+      },
+      {
+        "id": "Hub",
+        "label": "Hub",
+        "name": "Hub",
+        "shape": "Hub",
+        "image": "https://i.ibb.co/b6n6nwK/hub.jpg",
+        "size": 15,
+        "color": "#0000ff"
+      },
+      {
+        "id": "Bridge",
+        "label": "Bridge",
+        "name": "Bridge",
+        "shape": "Bridge",
+        "image": "https://i.ibb.co/5MbJ5kp/bridge.jpg",
+        "size": 15,
+        "color": "#0000ff"
+      },
+      {
+        "id": "Router",
+        "label": "Router",
+        "name": "Router",
+        "shape": "Router",
+        "image": "https://i.ibb.co/n11jQDz/router.jpg",
+        "size": 20,
+        "color": "#0000ff"
+      },
+      {
+        "id": "Port",
+        "label": "Port",
+        "name": "Port",
+        "shape": "image",
+        "image": "https://i.ibb.co/D8T5DW6/accesspoint.jpg",
+        "size": 15,
+        "color": "#0000ff"
+      },
+      {
+        "id": "LAN",
+        "label": "LAN",
+        "name": "LAN",
+        "shape": "image",
+        "image": "https://i.ibb.co/Jcv5pd5/lan.png",
+        "size": 15,
+        "color": "#0000ff"
+      }
+    ]
+  }
+  

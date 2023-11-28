@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 2px;
+  text-align: CENTER;
+}
+
+th {
+  background-color: #f2f2f2;
+}
