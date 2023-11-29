@@ -62,6 +62,9 @@ function NetworkWithIcons() {
       selectable: true,
       hover: true,
     },
+    physics: {
+      enabled: false
+    },
     manipulation: {
       enabled: false,
       initiallyActive: true,
@@ -301,7 +304,10 @@ function NetworkWithIcons() {
   }, [startAnimation]);
 
   useEffect(() => {
+    
     if (startAnimation) {
+      setDisabledSendPacketButton(true);
+      setDisabledSrcDstSelectionButton(true);
       const intervalId = setInterval(() => {
         if (messageIndex < animationObject.length) {
           const currentStep = animationObject[messageIndex];
@@ -339,7 +345,8 @@ function NetworkWithIcons() {
           setMessageIndex(messageIndex + 1);
         } else {
           clearInterval(intervalId);
-          // Reset edges to black
+          setDisabledSendPacketButton(false)
+          setDisabledSrcDstSelectionButton(false)
           const resetEdges = data.edges.map((edge) => ({
             ...edge,
             color: edge.color === "#6b6d6e" ? "#6b6d6e" : "017a8f",
